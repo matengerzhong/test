@@ -47,7 +47,7 @@ public class MyJava {
 	public static <T extends Comparable> T min(List<T> t) {
 		
 		if (t == null || t.size() == 0) {
-			return "a";
+			return (T) "a";
 		}
 		T m = t.get(0);
 		for (int i = 0; i < t.size(); i++) {
